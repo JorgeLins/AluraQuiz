@@ -3,7 +3,7 @@ import db from "../db.json";
 import Widget from "../src/components/Widgets"
 import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
+import Footer from '../src/components/footer'
 import GitHubCorner from '../src/components/GitHubCorner'
 
 //const BackgroundImage = styled.div`
