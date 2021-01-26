@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
@@ -10,6 +11,7 @@ import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import ButtonIniciar from '../src/components/Buttons';
+import Input from '../src/components/Input';
 
 // const BackgroundImage = styled.div`
 //    background-image: url(${db.bg});
@@ -30,7 +32,7 @@ export const QuizContainer = styled.div`
 `;
 export default function Home() {
   const router = useRouter();
-  const [name, setName] = React.useState('');
+  const [name, setName] = React.useState(' ');
   console.log(name, setName);
   return (
 
@@ -55,13 +57,14 @@ export default function Home() {
               console.log('mandando uma submissao por meio do react');
             }}
             >
-              <input
+              <Input
                 onChange={function (infosDoEvento) {
                   console.log(infosDoEvento.target.value);
                   setName(infosDoEvento.target.value);
                 }}
                 placeholder="Digite o seu nome"
               />
+
               <ButtonIniciar type="submit" disabled={name.length === 0}>
                 Jogar
                 {name}

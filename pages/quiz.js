@@ -19,7 +19,7 @@ export const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
-  margin: auto 10%;
+  margin: auto 35%;
   @media screen and (max-width: 500px) {
     margin: auto;
     padding: 15px;
@@ -30,15 +30,16 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>PErgunta 1</h1>
+            <h1>Pergunta 1</h1>
           </Widget.Header>
 
           <Widget.Content>
-            <p>é o meu quiz sem tema aparente ainda</p>
+            <p>Pergunta Pergunta Pergunta Pergunta Pergunta Pergunta </p>
           </Widget.Content>
-          <ButtonIniciar>Iniciar</ButtonIniciar>
+          <ButtonIniciar>Nao sei</ButtonIniciar>
 
         </Widget>
 
