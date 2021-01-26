@@ -10,7 +10,7 @@ const ButtonIniciar = styled.button`
   margin-bottom: 16px;
   margin-right: 40px;
   margin-left: 40px;
-  padding: 4px 64px;
+  padding: 4px 80px;
   border: 2px solid ${({ theme }) => theme.colors.primary};
   border-radius: 3px;
 

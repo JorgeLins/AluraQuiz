@@ -67,6 +67,7 @@ export default function Home() {
 
               <ButtonIniciar type="submit" disabled={name.length === 0}>
                 Jogar
+                {' '}
                 {name}
               </ButtonIniciar>
             </form>
