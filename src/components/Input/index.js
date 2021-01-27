@@ -1,16 +1,40 @@
 /* eslint-disable linebreak-style */
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Input = styled.input`
-  padding: 8px 16px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-right: 40px;
-  margin-left: 40px;
+const InputBase = styled.input`
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  border: 2px solid ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.black};
-  background: ${({ theme }) => theme.colors.contrastText};
-  border:  2px solid ${({ theme }) => theme.colors.primary};
-  border-radius: 3px;
+  background-color: ${({ theme }) => theme.colors.contrastText};
+  border-radius: ${({ theme }) => theme.borderRadius};
+  outline: 0;
+  margin-bottom: 25px;
 `;
 
-export default Input;
+export default function Input({ onChange, placeholder, ...props }) {
+  return (
+    <div>
+      <InputBase
+        placeholder={placeholder}
+        onChange={onChange}
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        {...props}
+      />
+    </div>
+  );
+}
+
+Input.defaultProps = {
+  value: '',
+};
+
+Input.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string,
+};

@@ -1,7 +1,7 @@
 {
     "bg":"https://miro.medium.com/max/8160/1*dQzHLP4F1bHq4014uJbXBw.jpeg",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "Alura Quiz - Cinema",
+    "description": "Teste os seus conhecimentos sobre filmes e vamos ver quantos pontos você consegue fazer.",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -31,9 +31,9 @@
     ],
     "theme": {
       "colors": {
-        "primary": "#A10010",
+        "primary": "#550008",
         "secondary": "#29b6f6",
-        "mainBg": "#540008  ",
+        "mainBg": "rgba(50, 0, 10, 0.85)",
         "black": "#00000",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",
