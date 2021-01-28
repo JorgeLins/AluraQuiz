@@ -52,8 +52,6 @@ export default function Home() {
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
-
-              console.log('mandando uma submissao por meio do react');
             }}
             >
               <Input
