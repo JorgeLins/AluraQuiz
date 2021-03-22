@@ -67,14 +67,6 @@ export default function Home() {
             </form>
           </Widget.Content>
         </Widget>
-
-        <Widget>
-
-          <Widget.Content>
-            <h1>Quizes da galera</h1>
-            <p>é o meu quiz sem tema aparente ainda</p>
-          </Widget.Content>
-        </Widget>
         <Footer />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/JorgeLins" />
