@@ -1,5 +1,9 @@
+/* eslint-disable react/jsx-indent */
+/* eslint-disable jsx-quotes */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
 import db from '../db.json';
 import Widget from '../src/components/widgets';
 import QuizLogo from '../src/components/QuizLogo';
@@ -19,15 +23,15 @@ function ResultWidget({ results }) {
         <p>
           Você acertou
           {' '}
-          {/* results.reduce((somatoriaAtual, resultAtual) => {
+          { results.reduce((somatoriaAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
             if (isAcerto) {
               return somatoriaAtual + 1;
             }
 
             return somatoriaAtual;
-          }, 0) */}
-          {results.filter((x) => x).length}
+          }, 0) }
+          {/* results.filter((x) => x).length */}
           {' '}
           perguntas
         </p>
@@ -43,6 +47,9 @@ function ResultWidget({ results }) {
           ))}
 
         </ul>
+        <Link href='/'>
+        <Button>Recomeçar</Button>
+        </Link>
       </Widget.Content>
     </Widget>
   );
@@ -125,7 +132,7 @@ function QuestionWidget({
                 data-status={isQuestionSubmited && alternativeStatus}
               >
                 <input
-                  // style={{ display: 'none' }}
+                  style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
                   onChange={() => setSelectedAlternative(alternativeIndex)}
@@ -193,6 +200,9 @@ export default function QuizPage() {
 
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>{db.title}</title>
+      </Head>
       <QuizContainer>
         <QuizLogo />
         {screenState === screenStates.QUIZ && (

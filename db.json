@@ -1,6 +1,6 @@
 {
     "bg":"https://miro.medium.com/max/8160/1*dQzHLP4F1bHq4014uJbXBw.jpeg",
-    "title": "Alura Quiz - Cinema",
+    "title": "Quiz - Cinema",
     "description": "Teste os seus conhecimentos sobre filmes e vamos ver quantos pontos você consegue fazer.",
     "questions": [
       {
@@ -16,13 +16,39 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "image": "https://media0.giphy.com/media/3osxY8301wFV8HZLvW/200.gif",
+        "title": "Qual desses filmes foi o primeiro filme de língua estrangeira a ganhar Oscar de Melhor Filme?",
+        "description": "Aconteceu recentemente",
+        "answer": 1,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Roma",
+           "Parasita",
+           "Cidade de Deus",
+           "Minari"
+        ]
+      },
+      {
+        "image": "https://media0.giphy.com/media/3osxY8301wFV8HZLvW/200.gif",
+        "title": "Em 2017 qual desses filmes levou o Oscar de Melhor Filme?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+           "Manchester à beira-mar",
+           "La La Land",
+           "Lion",
+           "Moonlight"
+        ]
+      },
+      {
+        "image": "https://media0.giphy.com/media/3osxY8301wFV8HZLvW/200.gif",
+        "title": "Qual dessas franquias foi a mais premiada do Oscar?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+           "Harry Potter",
+           "Star Wars",
+           "O Senhor dos Anéis",
+           "Universo Marvel"
         ]
       }
     ],
